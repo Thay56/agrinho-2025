@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raízes Urbanas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Raízes Urbanas <i class="fas fa-leaf"></i></h1>
+    <p>Por Thaynna Martins e José Augusto</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#recados">Recados & Dicas</a>
+    <a href="#anunciar">Anuncie Aqui</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="banner">
+      <img src="imagem.jpg.jpeg" alt="Imagem Raízes Urbanas" />
+    </div>
+    <h2>Bem-vindos ao Raízes Urbanas</h2>
+    <p>Nosso projeto conecta o urbano ao rural com respeito, educação e valorização das raízes do campo na cidade.</p>
+  </section>
+
+  <section id="recados">
+  <h2>Recados & Dicas ❤️</h2>
+
+  <div class="topico">
+    <h3>🍊 Chá de Laranja</h3>
+      <img src="imagem.jpg (2).jpeg" alt="Chá de laranja" style="width: 200px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+
+    <p>O chá de laranja é uma solução deliciosa de saúde e bem-estar! Indicado por conter materiais de limpeza, a redução do colesterol, a diminuição da ansiedade e fortalecimento do sistema imunológico.</p>
+    
+    <ul>
+      <li>Ajuda na digestão e na perda de peso.</li>
+      <li>Possui propriedades anti-inflamatórias e antioxidantes.</li>
+      <li>Excelente para aliviar sintomas de gripes e resfriados.</li>
+    </ul>
+  </div>
+
+  <div class="topico">
+    <h3>🌿 Composteira</h3>
+    <img src="imagem.jpg4.jpeg" alt="Composteira doméstica" style="width: 200px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+
+    <p>A Composteira é a solução prática e ecológica para transformar resíduos orgânicos em adubo natural, fortalecendo o ciclo sustentável entre o campo e a cidade.</p>
+    
+    <ul>
+      <li>Reduz até 60% do lixo doméstico.</li>
+      <li>Produz adubo rico em nutrientes para hortas e plantas.</li>
+      <li></li>
+
+<section id="anuncios">
+  <h2>📢 Anúncios de Produtos</h2>
+  <div class="anuncio">
+    <img src="Queijo caseiro.pnj.jpeg" alt="Produto 1">
+    <h3>Queijo caseiro</h3>
+    <p>Queijo caseiro, direto do produtor rural. Sem aditivos e com certificado de qualidade.</p>
+    <a href="#">Entrar em contato</a>
+  </div>
+<div class="anuncio">
+    <img src="verduras.pnj.jpeg" alt="Produto 2">
+    <h3>verdura organica</h3>
+    <p> uma refeição cheia de verdura nos torna mais saudável</p>
+    <a href="#">Entrar em contato</a>
+  </div>
+
+  <div class="anuncio">
+    <img src="Bolacha  caseira.pnj.jpeg" alt="Produto 3">
+    <h3>Bolacha caseira</h3>
+    <p>Bolacha Canseira: tradicional, crocante e perfeita para acompanhar um bom café/p>
+    <a href="#">Entrar em contato</a>
+  </div>
+</section>
+  <section id="anunciar">
+    <h2>Anuncie seu Produto ou Serviço <i class="fas fa-bullhorn"></i></h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <input type="text" placeholder="Nome do produto ou serviço" required />
+      <textarea placeholder="Descrição" required></textarea>
+      <button type="submit">Enviar Anúncio</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Raízes Urbanas. Criado por Thaynna Martins e José Augusto.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 200;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.classList.add('show');
+        } else {
+          sec.classList.remove('show');
+        }
+      });
+    });
+
+    const images = document.querySelectorAll('.galeria img');
+    images.forEach(img => {
+      img.addEventListener('mouseover', () => {
+        img.style.transform = 'scale(1.05)';
+        img.style.transition = 'transform 0.3s ease';
+      });
+      img.addEventListener('mouseout', () => {
+        img.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
